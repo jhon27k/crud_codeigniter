@@ -1,0 +1,160 @@
+/* Centralização vertical do conteúdo */
+.table td {
+	vertical-align: middle;
+}
+
+/* Centraliza as opções de operaçao */
+table.table.dataTable > tbody > tr >td:last-child {
+	text-align: center;
+}
+
+
+/* Centraliza a foto do perfil nas tabela */
+
+table.table.dataTable > tbody > tr >td.photo-col,
+table.table.dataTable > tbody > tr >td.gender-col {
+	text-align: center
+}
+
+.user-photo-table {
+	width: 30px;
+	height: 30px;
+}
+
+/* Botões crop */
+.slim-btn-group {
+	width: 100px;
+	padding-bottom: 9px;
+	margin-left: 3px;
+	display: flex;
+}
+
+/* Esconde botão remover, só exibe quando passa o mouse em cima da foto (javascript) */
+.slim-btn-remove {
+	display: none;
+}
+
+/* Ellipsis para as habilidades */
+#roles-table > tbody > tr > td:nth-child(2) {
+	/* word-break: break-all; */
+	white-space: nowrap;
+	width: 60%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 0;
+}
+
+/* Ellipsis para as habilidades */
+table.table.dataTable > tbody > tr > td.long-text {
+	/* word-break: break-all; */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 0;
+}
+
+/* Coluna telefone não quebrar */
+
+#customers-table > tbody > tr > td.phone-cal {
+	width: 20%;
+    text-align: center;
+}
+
+/* Centraliza coluna sexo */
+
+#customers-table > tbody > tr > td.gender-col {
+    text-align: center;
+}
+
+/* Corrige botão form update customer */
+.btn-modal-form {
+	width: auto !important;
+}
+
+.lightpick__month-title {
+	display: flex;
+}
+
+.lightpick__select {
+	box-shadow: none;
+	line-height: inherit;
+	height: auto;
+	width: auto;
+}
+.indicators-container {
+	display: flex;
+    justify-content: space-between;
+}
+
+.indicator-widget {
+	display: inherit;
+    display: flex;
+    background-color: #ffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    border-radius: 4px;
+    width: calc(95% / 4);
+    height: 120px;
+    justify-content: space-between;
+}
+
+.indicator-text {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+
+.indicator-text span{
+	font-size: 18px;
+}
+
+.indicator-text h4{
+	font-size: 40px;
+}
+
+.indicator-icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.indicator-icon i {
+	font-size: 40px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+	.dataTables_filter {
+		float: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.indicators-container {
+		flex-direction: column;
+	}
+	
+	.indicator-widget {
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.dataTables_filter {
+		float: right;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+.border_{
+	border: solid 1px #333333;
+}
